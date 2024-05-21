@@ -26,7 +26,7 @@ const API = () => {
         {
           isloading==true ? "Loading..." :
           data.map ((users) => (
-            <div key={users.id}>
+            <div className='container col-md-4' key={users.id}>
               <img src={users.avatar_url} style={imageStyle} ></img>
               <h1>{users.login}</h1>
             </div>
